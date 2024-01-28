@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.banner{
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(addison.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically center the logos */
+    gap: 275px; /* Adjust the gap between the logos */
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 200px); /* Adjust the right position as needed */
+}
+.logoright, .logoleft {
+    display:none;
+}
+.navbar {
+    display:none;
+}
+.container {
+        position: relative;
+        display: flex; /* Use flexbox to control layout */
+        flex-direction: column; /* Stack children vertically */
+        height: 100vh; /* Make the container take up the full viewport height */
+}
+
+.top-banner {
+    background-color: #56279c;
+    color: rgb(234, 181, 8);
+    text-align: center;
+    padding: 0;
+    flex: 0; /* Fix the top banner at the top */
+}
+.top-banner h1 {
+    font-size: 30px; /* Adjust font size as needed */
+    font-family: 'Playfair Display';
+    margin: 0; 
+}
+
+.schedule {
+    width: 49%;
+    background-color: rgba(86, 39, 156, 0.491);
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 100%; /* Set a fixed height for the schedule */
+    flex: 1; /* Let the schedule take the remaining height */
+    overflow-y: auto;
+}
+.schedule h2 {
+    font-size: 30px;
+    color: #fff;
+    padding: 9px;
+    border: 1px solid #f2d509;
+    margin-bottom: 0px;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+.matchup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 1px solid #f2d509;
+    flex-wrap: wrap; /* Allow matchups to wrap to the next line */
+}
+.date, .time, .teams {
+    flex: 1;
+    font-size:12px;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid #f2d509;
+    color: #fff;
+    background-color: transparent;
+    font-weight: bold;
+}
+.links-section {
+    width: 49%;
+    background-color: rgba(86, 39, 156, 0.491);
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:32px;
+    right: 0;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    flex: 0; /* Let the links-section take as much height as needed */
+    max-height: calc(100vh - 68px); /* Limit the max height based on the viewport height minus the top-banner height */
+    overflow-y: auto;
+}
+.links-section h2 {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #f2d509;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+    overflow-y: auto;
+}
+.article{
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 1px solid #f2d509;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex; /* Use flexbox to control layout */
+    align-items: center; /* Vertically center content */
+    overflow-y: auto;
+}
+.article .logo, .video .logo {
+    width: 30px; /* Adjust the width of the logos as needed */
+    height: 30px; /* Adjust the height of the logos as needed */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+.article a, .video a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    flex-grow: 1; /* Allow text to expand and fill available space */
+    text-align: left; /* Align text to the left within the link container */
+    overflow-y: auto;
+}
+.videos-section {
+    background-color: #000;
+    border: 1px solid #f2d509;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+}
+.videos-section h2 {
+    font-size: 18rem;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    overflow-y: auto;
+}
+.video iframe {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.logo {
+    width: 40px;
+    height: 40px; 
+    margin-right: 10px; 
+}
+.record {
+    display:none;
+}
+.week-matchup {
+    display:none
+}
+.matchup-info {
+    display:none
+}
+.team-column,
+.vs-column {
+    display:none
+}
+.vs {
+    display:none
+}
+.team-logo-left img{
+    display:none
+}
+.team-logo-right img{
+    display:none
+}
+.blog-box {
+    display: none;
+}
+.blog-title {
+    display:none;
+}
+.blog-content {
+    display:none
+}
+
+
+.highlight-yellow { color: #e2b025; }
+.highlight-skolyellow{ color: rgb(234, 181, 8);}
+.highlight-skolpurple{ color: #56279c}
+.highlight-red { color: #ef2121; }
+.highlight-green {color: rgb(0, 255, 0)}
+.make-font{ font-family:'Playfair Display'; }
